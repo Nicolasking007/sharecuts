@@ -1,0 +1,261 @@
+*{
+    font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+
+/*å…³äºŽ æŒ‰é’®*/
+.about{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    height: 1.5em;
+    line-height: 1.5em;
+    width: 1.5em;
+    border-radius: .75em;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0,0,0,.05);
+    cursor: pointer;
+}
+
+/*å¼¹çª—å±‚*/  
+
+.pop-box {   
+    z-index: 9999; /*è¿™ä¸ªæ•°å€¼è¦è¶³å¤Ÿå¤§ï¼Œæ‰èƒ½å¤Ÿæ˜¾ç¤ºåœ¨æœ€ä¸Šå±‚*/  
+    margin-bottom: 2px;   
+    display: none;   
+    position: fixed;
+    background: #FFF;   
+    text-align: center;
+    font-size: 16px;
+    width: 300px;
+}   
+.pop-box .caption{
+    font-size: 23px;
+    display: block;
+    text-align: left;
+    border-left: 4px solid #563d7c;
+    margin: 10px 0 10px 5px;
+    background: #eee;
+    padding: 3px;
+    color: #666;
+}  
+.pop-box .thanks{
+    /*text-indent: 30px;*/
+    padding: 0 10px;
+    text-align: left;
+    line-height: 25px;
+    color: #555;
+}
+.pop-box .copyBaidu{
+    font-size: 12px;
+    /*text-indent: 30px;*/
+    padding: 0 10px;
+    text-align: left;
+    line-height: 18px;
+    color: #999;
+}  
+.pop-box .thanks a{
+    margin: 0 2px;
+    color: #666;
+    text-decoration: none;
+} 
+.pop-box .thanks a:hover{
+    margin: 0 2px;
+    color: #666;
+    text-decoration: underline;
+} 
+
+.pop-box .readit{   /* â€œæˆ‘çŸ¥é“äº†â€ */
+    font-size: 14px;
+    line-height: 40px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+}
+.pop-box .readit:hover{   /* â€œæˆ‘çŸ¥é“äº†â€ */
+    color: #666;
+}
+
+.mask {   /*é®ç½©å±‚*/  
+    color:#C7EDCC;
+    background-color:#000;
+    position:absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.59;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 59);
+    filter: alpha(opacity = 59);
+} 
+
+/*é¡µé¢ä¸»ä½“éƒ¨åˆ†*/  
+.container{
+    height: 500px;
+    width: 100%;
+    text-align: center;
+}
+.title{
+    padding-top: 100px;
+}
+#kw {
+    width: 521px;
+    height: 20px;
+    padding: 9px 7px;
+    font: 16px arial;
+    border: 1px solid #d8d8d8;
+    border-bottom: 1px solid #ccc;
+    vertical-align: top;
+    outline: none;
+    margin-right: 0;
+}
+#kw:focus{
+    border-top: 1px solid #38f !important;
+    border-left: 1px solid #38f !important;
+    border-bottom: 1px solid #38f !important;
+}
+/*ç™¾åº¦ä¸€ä¸‹*/
+.btn {
+    cursor: pointer;
+    width: 102px;
+    height: 40px;
+    padding: 0;
+    border: 0;
+    background-color: #38f;
+    font-size: 16px;
+    color: white;
+    margin-left: -10px;
+}
+.logo {
+    height: 100px;
+    margin-bottom: -20px;
+}
+#instructions { /*æç¤ºè¯­*/
+    display: inline-block;
+    margin-top: 40px;
+    padding: 30px 2px;
+    color: #999999;
+    font-size: 1.1em;
+}
+.link {
+    /*margin-top: 100px;*/
+    display: block;
+}
+a.link_button {
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    line-height: 38px;
+    margin: 0 10px;
+    background-color: #38f;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+/*é“¾æŽ¥æ¡†*/
+.copyable{
+    width: 300px;
+    height: 30px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    vertical-align: middle;
+}
+#arrow{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+footer{
+    color: gray;
+    text-align: center;
+}
+footer a{
+    color: gray;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 666px) {  /*é’ˆå¯¹å°å±å¹•çš„ä¼˜åŒ–*/
+    
+    .title{
+        font-size: 16px;
+        font-weight: 400;
+        padding-top: 100px;
+    }
+    
+    .logo {
+        height: 50px;
+        margin-bottom: -8px;
+    }
+    
+    .search-box{
+        padding-top: 10px;
+        display: block;
+        width: 100%;
+    }
+    
+    #kw {
+        height: 20px;
+        font: 16px arial;
+        border: 1px solid #d8d8d8;
+        border-bottom: 1px solid #ccc;
+        vertical-align: top;
+        outline: none;
+        
+        float:left; 
+        width: 95%;
+        margin-right: -200px;
+    }
+    
+    /*ç™¾åº¦ä¸€ä¸‹*/
+    .btn {
+        height: 40px;
+        padding: 0;
+        border: 0;
+        background-color: #38f;
+        font-size: 16px;
+        color: white;
+        margin-left: -10px;
+        float: right; 
+        width: 100px;
+        z-index: 999999;
+    }
+    
+    .link{
+        margin-top: 30px;
+    }
+    
+    a.link_button {
+        display: inline-block;
+        width: 100px;
+        height: 35px;
+        line-height: 38px;
+        margin: 0 10px;
+        background-color: #38f;
+        color: white;
+        text-align: center;
+        font-size: 0.8em;
+        text-decoration: none;
+    }
+    /*é“¾æŽ¥æ¡†*/
+    .copyable{
+        width: 80%;
+        height: 30px;
+        font-size: 20px;
+        margin-bottom: 20px;
+        vertical-align: middle;
+    }
+}
+
+
+.footer{
+		height:150px;
+		width:960px;		
+	}
+
+	
+
+
